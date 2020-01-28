@@ -6,8 +6,7 @@
          change-password.json 
          requires-login)
 
-(require web-server/servlet
-         (except-in website-js header select)
+(require (except-in website-js header select)
          mc-data/models
          webapp/server/util
          web-server/http/id-cookie
